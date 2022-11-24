@@ -220,6 +220,41 @@ const colors ={
 //     'L': '#FF00FF'
 // };
 
+class Utils {
+    // static getRandomNumberInRange = (min, max) => {
+    //     return Math.floor(Math.random() * (max - min + 1)) + min;
+    // }
+
+    // static getRandomColor() {
+    //     return Game.COLORS[Utils.getRandomNumberInRange(0, Game.COLORS.length - 1)];
+    // }
+
+    static loadSound(src, loop) {
+        const sound = document.createElement("audio");
+        sound.src = src;
+        sound.setAttribute("preload", "auto");
+        sound.setAttribute("controls", "none");
+        sound.loop = loop || true;
+        sound.style.display = "none";
+        document.body.appendChild(sound);
+        return sound;
+    }
+}
+
+//init(){
+//    this.initSounds();
+//}
+
+// Iniciar música
+//initSounds(){
+    //this.sounds.background = Utils.loadSound("sounds/songKarinka.mp3", true);
+    //this.sounds.success = Utils.loadSound("assets/success.wav");
+    //this.sounds.denied = Utils.loadSound("assets/denied.wav");
+    //this.sounds.tap = Utils.loadSound("assets/tap.wav");
+//}
+
+let sounds = {};
+
 let count = 0;
 let tetromino = getNextTetromino();
 let rAF = null;  // keep track of the animation frame so we can cancel it
