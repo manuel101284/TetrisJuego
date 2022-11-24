@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ProyectoTetris</title>
+
+        <style>
+            /* ESTILO EN EL .CSS */
+        </style>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="header" id="hdr-1">
+            <div>
+                <button class="btn" id="btn-claro-oscuro">Claro/Oscuro</button>
+            </div>
+            <div>
+                <button class="btn" id="btn-iniciar">Iniciar</button>
+                <button class="btn" id="btn-reset">Reset</button>  
+            </div>
+        </header>
+
+        <section class="container">
+            <div class="info-jugador">
+                <span class="puntaje" id="puntaje-jugador">0</span>
+                <span class="nivel" id="nivel-jugador">1</span>
+            </div>
+            
+            <canvas width="320" height="640" id="game"></canvas>
+            <!-- <canvas id="game"></canvas> -->
+            
+            
+            <div class="seccion-botones">
+                <button onclick="moverClic()" class="btn" id="btn-izquierda"><img src="/img/botonIzquierda.png"></button>
+                <button onclick="moverClic()" class="btn" id="btn-abajo"><img src="/img/botonAbajo.png"></button>
+                <button onclick="moverClic()" class="btn" id="btn-derecha"><img src="/img/botonDerecha.png"></button>
+                <button onclick="moverClic()" class="btn" id="btn-arriba"><img src="/img/botonRotar.png"></button>
+            </div>
+        </section>
+        <script src="script.js"></script>
+
+    </body>
+</html>
