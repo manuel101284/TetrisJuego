@@ -15,12 +15,23 @@
 
     <body>
         <header class="header" id="hdr-1">
-            <div>
-                <button class="btn" id="btn-claro-oscuro">Claro/Oscuro</button>
-            </div>
-            <div>
-                <button class="btn" id="btn-iniciar">Iniciar</button>
-                <button class="btn" id="btn-reset">Reset</button>  
+            <label  type="button" class="btn btn-dark label">
+                <div class="toggle">
+                    <input class="toggle-state" type="checkbox" name="check" value="check" onclick="changeMode()">
+                    <div class="indicator"></div>
+                </div>
+            </label>
+
+            <a href="#openModal">Pause</a>
+            
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                        <h2>🧩Pausa🎮</h2>
+                        <p>¿Deseas seguir?</p>
+                        <button class="btn" id="btn-iniciar">Iniciar</button>
+                        <button class="btn" id="btn-reset"><img src=''/></button>
+                </div>
             </div>
         </header>
 
@@ -42,6 +53,11 @@
             </div>
         </section>
         <script src="script.js"></script>
-
+        <script type="text/javascript"> 
+            function changeMode() { 
+            var cuerpoweb = document.body; 
+            cuerpoweb.classList.toggle("dark"); 
+            }
+        </script>
     </body>
 </html>
