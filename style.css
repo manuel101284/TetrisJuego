@@ -78,19 +78,29 @@
     .puntaje{
         max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 
     .nivel{
         max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 }
 
@@ -169,25 +179,35 @@
         display: flex;
         flex-direction: row;
         margin: auto;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .puntaje{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 
     .nivel{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 }
 
@@ -264,24 +284,35 @@
         display: flex;
         flex-direction: row;
         margin: auto;
-        justify-content: space-around;
+        justify-content: space-between;
     }
+
     .puntaje{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 
     .nivel{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 }
 
@@ -358,25 +389,35 @@
         display: flex;
         flex-direction: row;
         margin: auto;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .puntaje{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 
     .nivel{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 }
 
@@ -453,25 +494,35 @@
         display: flex;
         flex-direction: row;
         margin: auto;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .puntaje{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 
     .nivel{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 }
 
@@ -548,24 +599,35 @@
         display: flex;
         flex-direction: row;
         margin: auto;
-        justify-content: space-around;
+        justify-content: space-between;
     }
+
     .puntaje{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 
     .nivel{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 }
 
@@ -642,25 +704,35 @@
         display: flex;
         flex-direction: row;
         margin: auto;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .puntaje{
-        width: 100%;
+        max-width: 100%;
         height: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 
     .nivel{
-        width: 100%;
-        height: 50;
-        display: block;
+        max-width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
         background-color: lightgray;
         border: 1px solid black;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        color: #d20076;
+        font-size: 18px;
     }
 }
 
