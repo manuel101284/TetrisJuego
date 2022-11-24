@@ -327,4 +327,8 @@ rAF = requestAnimationFrame(loop);
 
 //
 // Muestra la información de los puntajes y del nivel en el canvas
-
+/* modo dia-noche */ 
+function cambiarModo() { 
+    var cuerpoweb = document.body; 
+    cuerpoweb.classList.label("dark"); 
+}
