@@ -436,15 +436,15 @@ var nommingCake = document.getElementById('openModal').animate(
       duration: aliceChange.effect.timing.duration / 2
     });
 
-    pausarOresumir() {
-        if (this.pausado) {
-          this.continuarJuego();
-          this.$btnResume.hidden = true;
-          this.$btnPause.hidden = false;
-        } else {
-          this.pausarJuego();
-          this.$btnResume.hidden = false;
-          this.$btnPause.hidden = true;
-        }
-      }
+    //pausarOresumir() {
+    //    if (this.pausado) {
+    //      this.continuarJuego();
+    //      this.$btnResume.hidden = true;
+    //      this.$btnPause.hidden = false;
+    //    } else {
+    //      this.pausarJuego();
+    //      this.$btnResume.hidden = false;
+    //      this.$btnPause.hidden = true;
+    //    }
+    //}
   
