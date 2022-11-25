@@ -34,6 +34,6 @@ las herramientas que se utilizaron para crear este proyecto son:
 [CSS] - Usada para estilos al contenido de la pagina.
 [JavaScript] - usada para el funcionamiento de la pagina.
 
-## Authors👩🏻‍💻👨🏻‍💻
+## Authors👩🏻👨🏻‍🦲
 @27Paola.
 @manuel101284
