@@ -332,3 +332,27 @@ function cambiarModo() {
     var cuerpoweb = document.body; 
     cuerpoweb.classList.label("dark"); 
 }
+
+// animación de la magdalena que lentamente se está comiendo
+var nommingCake = document.getElementById('openModal').animate(
+    [
+      { transform: 'translateY(0)' },
+      { transform: 'translateY(-80%)' }
+    ], {
+      fill: 'forwards',
+      easing: 'steps(4, end)',
+      duration: aliceChange.effect.timing.duration / 2
+    });
+
+    pausarOresumir() {
+        if (this.pausado) {
+          this.continuarJuego();
+          this.$btnResume.hidden = true;
+          this.$btnPause.hidden = false;
+        } else {
+          this.pausarJuego();
+          this.$btnResume.hidden = false;
+          this.$btnPause.hidden = true;
+        }
+      }
+  
