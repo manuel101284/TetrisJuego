@@ -220,6 +220,41 @@ const colors ={
 //     'L': '#FF00FF'
 // };
 
+class Utils {
+    // static getRandomNumberInRange = (min, max) => {
+    //     return Math.floor(Math.random() * (max - min + 1)) + min;
+    // }
+
+    // static getRandomColor() {
+    //     return Game.COLORS[Utils.getRandomNumberInRange(0, Game.COLORS.length - 1)];
+    // }
+
+    static loadSound(src, loop) {
+        const sound = document.createElement("audio");
+        sound.src = src;
+        sound.setAttribute("preload", "auto");
+        sound.setAttribute("controls", "none");
+        sound.loop = loop || true;
+        sound.style.display = "none";
+        document.body.appendChild(sound);
+        return sound;
+    }
+}
+
+//init(){
+//    this.initSounds();
+//}
+
+// Iniciar música
+//initSounds(){
+    //this.sounds.background = Utils.loadSound("sounds/songKarinka.mp3", true);
+    //this.sounds.success = Utils.loadSound("assets/success.wav");
+    //this.sounds.denied = Utils.loadSound("assets/denied.wav");
+    //this.sounds.tap = Utils.loadSound("assets/tap.wav");
+//}
+
+let sounds = {};
+
 let count = 0;
 let tetromino = getNextTetromino();
 let rAF = null;  // keep track of the animation frame so we can cancel it
@@ -318,9 +353,66 @@ document.addEventListener('keydown', function(e){
 
 // const pulsacionMover = document.querySelector(".btn");
 
-// function moverClick(){
+function moverIzquierda(){
+    var moverClic = document.getElementById('btn-izquierda');
+
+    if (gameOver) return;
+
+    // left and right arrow keys (move)
+    if (e.which === 37 || e.which === 39){
+        const col = e.which === 37
+        ? tetromino.col - 1
+        : tetromino.col + 1;
+
+        if (isValidMove(tetromino.matrix, tetromino.row, col)){
+            tetromino.col = col;
+        }
+    }
+}
+function moverAbajo(){
+    var moverClic = document.getElementById('btn-abajo');
+
+    // down arrow key (drop)
+    if(e.which === 40){
+        const row = tetromino.row + 1;
+
+        if (!isValidMove(tetromino.matrix, row, tetromino.col)){
+        tetromino.row = row - 1;
+
+        placeTetromino();
+        return;
+        }
+
+        tetromino.row = row;
+    }
+}
+function moverDerecha(){
+    var moverClic = document.getElementById('btn-derecha');   
     
-// }
+    if (gameOver) return;
+
+    // left and right arrow keys (move)
+    if (e.which === 37 || e.which === 39){
+        const col = e.which === 37
+        ? tetromino.col - 1
+        : tetromino.col + 1;
+
+        if (isValidMove(tetromino.matrix, tetromino.row, col)){
+            tetromino.col = col;
+        }
+    }
+}
+function moverRotar(){
+    var moverClic = document.getElementById('btn-arriba');
+
+    // up arrow key (rotate)
+    if (e.which === 38){
+        const matrix = rotate(tetromino.matrix);
+        if (isValidMove(matrix, tetromino.row, tetromino.col)){
+        tetromino.matrix = matrix;
+        }
+    }
+}
 
 // start the game
 rAF = requestAnimationFrame(loop);
