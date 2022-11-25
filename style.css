@@ -857,3 +857,9 @@ transition: opacity 400ms ease-in;
 #openModal{
     text-align: center;
 }
+.image{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: relative;
+    margin: auto;
+}
